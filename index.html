@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xbox360 god re-titler</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <script src="sha1.js"></script>
+    <script src="index.js"></script>
+    <h1 id="site-heading">xbox360 god re-titler</h1>
+    <div id="alignment-column">
+    <div id="main">
+    <div id="choose-file">
+    <h2>choose file below</h2>
+    <input type="file" onchange="XBOX360Retitler.handleFile(this)"></input>
+    </div>
+    <div id="titles">
+    <h2>old title:</h2>
+    <input id="old-title" type="text" readonly></input>
+    <h2>new title:</h2>
+    <input id="new-title" type="text" disabled onchange="XBOX360Retitler.handleNewTitle(value)"></input>
+    </div>
+    <div id="convert-button">
+    <h2>click "convert"</h2>
+    <button id="convert" type="button" disabled onclick="XBOX360Retitler.handleConvert()">convert</button>
+    </div>
+    <div id="download-link">
+    <h2>click "download"</h2>
+    <a id="download" disabled>download</a>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
