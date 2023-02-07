@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>xbox360 god re-titler</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <script src="sha1.js"></script>
-    <script src="index.js"></script>
+    <script src="main.js"></script>
     <h1 id="site-heading">xbox360 god re-titler</h1>
-    <div id="alignment-column">
-    <div id="main">
-    <div id="choose-file">
-    <h2>choose file below</h2>
-    <input type="file" onchange="XBOX360Retitler.handleFile(this)"></input>
-    </div>
-    <div id="titles">
-    <h2>old title:</h2>
-    <input id="old-title" type="text" readonly></input>
-    <h2>new title:</h2>
-    <input id="new-title" type="text" disabled onchange="XBOX360Retitler.handleNewTitle(value)"></input>
-    </div>
-    <div id="convert-button">
-    <h2>click "convert"</h2>
-    <button id="convert" type="button" disabled onclick="XBOX360Retitler.handleConvert()">convert</button>
-    </div>
-    <div id="download-link">
-    <h2>click "download"</h2>
-    <a id="download" disabled>download</a>
-    </div>
-    </div>
-    </div>
+    <form id="alignment-column">
+        <div id="main">
+            <div id="choose-file">
+                <h2>choose file below</h2>
+                <input id="file-input" type="file" onchange="XBOX360Retitler.handleFile(this)"></input>
+                <label id="for-file-input" for="file-input">upload</span>
+            </div>
+            <div id="titles">
+                <h2>old title:</h2>
+                <input id="old-title" type="text" readonly></input>
+                <h2>new title:</h2>
+                <input id="new-title" type="text" disabled oninput="XBOX360Retitler.handleNewTitle(value)"></input>
+            </div>
+            <div id="convert">
+                <h2>click "convert"</h2>
+                <button id="convert-btn" type="button" disabled
+                    onclick="XBOX360Retitler.handleConvert()">convert</button>
+            </div>
+            <div id="download">
+                <h2>click "download"</h2>
+                <a id="download-lnk" class="not-linked" onclick="XBOX360Retitler.handleDownload()">download</a>
+            </div>
+        </div>
+        <button id="reset-form" type="button" onclick="this.form.reset()" hidden></button>
+    </form>
 </body>
+
 </html>
