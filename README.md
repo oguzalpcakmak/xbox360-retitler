@@ -7,7 +7,7 @@ If you need to modify the game names on your home-brewed Xbox 360 console, it is
 
 - it only works for ascii characters! (not utf-8 compatible)
 
-- symbols like ™ are not interpereted correctly so don't use them (but ® works somehow)
+- symbols like ™ are not interpreted correctly so don't use them (but ® works somehow)
 
 **shootout to:**
 
