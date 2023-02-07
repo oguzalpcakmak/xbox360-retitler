@@ -46,12 +46,12 @@ var SHA1Generator = {
 
     kt: function (t) {
         return (t < 20) ? 1518500249 : (t < 40) ? 1859775393 :
-         (t < 60) ? -1894007588 : -899497514;
+            (t < 60) ? -1894007588 : -899497514;
     },
 
-    calcSHA1FromByte: function(byteArr) {
+    calcSHA1FromByte: function (byteArr) {
         var str = '';
-        for(var i=0; i<byteArr.length; i++)
+        for (var i = 0; i < byteArr.length; i++)
             str += String.fromCharCode(byteArr[i]);
         return this.calcSHA1(str);
     },
