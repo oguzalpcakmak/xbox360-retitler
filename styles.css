@@ -18,8 +18,6 @@ body {
     flex-direction: column;
     height: 12rem;
     width: 16rem;
-    word-wrap: inherit;
-    overflow: hidden;
     justify-content: center;
     gap: 0.1rem;
     align-items: center;
