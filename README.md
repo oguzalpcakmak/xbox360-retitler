@@ -1,5 +1,5 @@
 # xbox360-retitler
-If you need to modify the game names on your home-brewed Xbox 360 console, it is useful!
+If you need to modify game on demand titles on your home-brewed xbox 360 console, you're in the right place!
 
 **usage**: open index.html on your favorite internet browser or you can give it a try at: https://oguzalpcakmak.github.io/xbox360-retitler/
 
