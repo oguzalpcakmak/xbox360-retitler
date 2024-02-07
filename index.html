@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>xbox360 god re-titler</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <script src="sha1.js"></script>
-    <script src="main.js"></script>
-    <h1 id="site-heading">xbox360 god re-titler</h1>
-    <form id="alignment-column">
-        <div id="main">
-            <div id="choose-file">
-                <h2>choose file below</h2>
-                <input id="file-input" type="file" onchange="XBOX360Retitler.handleFile(this)"></input>
-                <label id="for-file-input" for="file-input">upload</span>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>xbox360-retitler</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="sha1-generator.js"></script>
+    <script type="text/javascript" src="xbox360-retitler.js"></script>
+    <script type="text/javascript" src="toast.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body>
+    <div id="root">
+      <div id="app-heading"><span>xbox360-retitler</span></div>
+      <div class="files-container">
+        <div id="files">
+          <div id="files-head" class="grid-container">
+            <span>#</span>
+            <div class="checkbox-head-container">
+              <input
+                id="checkbox-head"
+                name="checkbox-head"
+                type="checkbox"
+              /><label for="checkbox-head"> select all</label>
             </div>
-            <div id="titles">
-                <h2>old title:</h2>
-                <input id="old-title" type="text" readonly></input>
-                <h2>new title:</h2>
-                <input id="new-title" type="text" disabled oninput="XBOX360Retitler.handleNewTitle(value)"></input>
+            <span>file name</span>
+            <span>old title</span>
+            <span>new title</span>
+            <span>delete</span>
+          </div>
+          <div id="files-body">
+            <div id="file-upload" class="grid-container">
+              <span>drag and drop file(s) or</span>
+              <input
+                id="file-input"
+                type="file"
+                multiple
+                onchange="handleUploadFiles(this.files)"
+              />
+              <label for="file-input">select file(s) to upload</label>
             </div>
-            <div id="convert">
-                <h2>click "convert"</h2>
-                <button id="convert-btn" type="button" disabled
-                    onclick="XBOX360Retitler.handleConvert()">convert</button>
-            </div>
-            <div id="download">
-                <h2>click "download"</h2>
-                <a id="download-lnk" class="not-linked" onclick="XBOX360Retitler.handleDownload()">download</a>
-            </div>
+            <div id="blank-filler"></div>
+          </div>
         </div>
-        <button id="reset-form" type="button" onclick="this.form.reset()" hidden></button>
-    </form>
-</body>
-
+      </div>
+      <div class="download-container">
+        <button
+          id="download-button"
+          type="button"
+          onclick="handleDownload()"
+          disabled
+        >
+          download selected file(s)
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
