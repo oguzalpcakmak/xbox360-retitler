@@ -1,7 +1,7 @@
 # xbox360-retitler
 If you need to modify the game names on your home-brewed Xbox 360 console, it is useful!
 
-**usage**: open index.html on your favorite internet browser or you can give it a try at: https://oguzalpcakmak.tr.gg
+**usage**: open index.html on your favorite internet browser or you can give it a try at: https://oguzalpcakmak.github.io/xbox360-retitler/
 
 **known bugs:**
 
@@ -18,3 +18,7 @@ http://forums.xbox-scene.com/index.php?showtopic=706666
 **thanks for sha1 generator:**
 
 https://stackoverflow.com/questions/16832586/get-sha1-checksum-of-byte-array-in-javascript
+
+**thanks for toast notifications:**
+
+https://codepen.io/Coding-in-Public/pen/ZEaKENX
