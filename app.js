@@ -4,6 +4,7 @@ let filesBody;
 let fileUpload;
 let downloadButton;
 let checkBoxHead;
+let fileInput;
 
 const numerizeFiles = () => {
   Object.keys(filesData).forEach((fileName, index) => {
@@ -126,6 +127,7 @@ const handleUploadFiles = (files) => {
     handleUpload(file);
   });
   numerizeFiles();
+  fileInput.value = [];
 };
 
 const handleDragAndDrop = () => {
@@ -232,6 +234,7 @@ const main = () => {
   fileUpload = document.getElementById("file-upload");
   checkBoxHead = document.getElementById("checkbox-head");
   downloadButton = document.getElementById("download-button");
+  fileInput = document.getElementById("file-input");
   handleCheckboxes();
   handleDragAndDrop();
   initToast();
