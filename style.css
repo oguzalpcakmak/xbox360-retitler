@@ -30,8 +30,8 @@ body {
 }
 
 label[for="file-input"] {
-  color: #007991;
-  border: 0.2rem solid #007991;
+  color: #bcd8c1;
+  border: 0.2rem solid #bcd8c1;
   border-radius: 0.4rem;
   cursor: pointer;
   padding: 1%;
@@ -47,13 +47,11 @@ label[for="file-input"]:hover {
 }
 
 .files-container {
-  width: auto;
   display: grid;
   gap: 1%;
 }
 
 .grid-container {
-  width: auto;
   display: grid;
   grid-template-columns: 1fr 3fr 4fr 5fr 5fr 1fr;
   gap: 1%;
@@ -84,14 +82,12 @@ label[for="file-input"]:hover {
 }
 
 .file-name {
-  width: auto;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 
 .delete-button {
-  width: auto;
   justify-self: center;
   background: none;
   color: #bcd8c1;
@@ -115,10 +111,9 @@ label[for="file-input"]:hover {
 
 #download-button {
   cursor: pointer;
-  background-color: #222e50;
-  text-decoration: none;
-  color: #e9d985;
-  border: 0.2rem solid #e9d985;
+  background: none;
+  color: #bcd8c1;
+  border: 0.2rem solid #bcd8c1;
   border-radius: 0.4rem;
   padding: 1%;
   font-size: medium;
@@ -131,8 +126,8 @@ label[for="file-input"]:hover {
 }
 
 #download-button:hover:enabled {
-  color: #bcd8c1;
-  border-color: #bcd8c1;
+  color: #e9d985;
+  border-color: #e9d985;
 }
 
 ::-webkit-scrollbar {
@@ -168,7 +163,6 @@ input[type="checkbox"] {
 }
 
 .checkbox-head-container {
-  width: auto;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
