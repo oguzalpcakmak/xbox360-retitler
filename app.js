@@ -117,6 +117,7 @@ const handleUpload = (file) => {
     fileContainer.appendChild(newTitle);
     fileContainer.appendChild(deleteButton);
     filesBody.insertBefore(fileContainer, fileUpload);
+    triggerCheckBoxAndDownloadButton();
   };
 
   reader.readAsArrayBuffer(file);
